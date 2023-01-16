@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Here is your coach's answer</h1>
+
+  <p><%= @question.capitalize %></p>
+  <p>--You</p>
+  <p>-------------------------</p>
+  <div id="coach-answer">
+    <p>
+        <% if @question.downcase == 'i am going to work' %>
+        <%= 'Great!' %>
+        <% elsif @question.end_with?('?') %>
+        <%=  'Silly question, get dressed and go to work!' %>
+        <% else %>
+        <%= 'I don\'t care, get dressed and go to work!' %>
+        <% end %>
+    </p>
+    <p>--Your coach</p>
+  </div>
+
+  <p class="text-decoration-none"><%= link_to 'Want to ask another question?', ask_path %></p>
+</div>
