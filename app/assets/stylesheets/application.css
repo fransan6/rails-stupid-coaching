@@ -18,7 +18,18 @@
   color: orange
  }
 
+ a {
+  text-decoration: none;
+ }
+
  #coach-answer {
   background-color: rgb(255, 254, 212);
   width: 39vw;
+  padding: 8px;
+  border-left: 5px solid rgb(181, 181, 181);
+ }
+
+ #your-answer {
+  border-left: 5px solid rgb(181, 181, 181);
+  padding: 8px;
  }
